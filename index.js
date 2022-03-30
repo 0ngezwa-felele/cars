@@ -7,11 +7,10 @@ axios
     display.data.forEach(cars => {
         let li = document.createElement("tr")
         li.innerHTML = `<tr> 
-        <td>${cars.model}<td/>
-        <td>${cars.make}<td/>
-        <td>${cars.color}<td/> `
-        
-
+        <td>${cars.model}</td>
+        <td>${cars.make}</td>
+        <td>${cars.color}</td> 
+        </tr>`
         
         carsElement.appendChild(li)
     
