@@ -13,7 +13,7 @@ axios
         display.data.forEach(cars => {
             let li = document.createElement("tr")
 
-                li.innerHTML = `<tr> 
+            li.innerHTML = `<tr> 
             <td>${cars.model}</td>
             <td>${cars.make}</td>
             <td>${cars.color}</td> 
@@ -69,16 +69,13 @@ let displayList = () => {
     axios.get(`https://api-tutor.herokuapp.com/v1/cars/make/${brandsElement.value}/color/${colorsElem.value}`)
         .then(function (display) {
             console.log(display.data[0]);
-            display.data.forEach(cars => {
+            display.data.forEach(filtered => {
+                let li = document.createElement("tr")
+                li.innerHTML = `<tr> 
+                <td>${filtered.model}</td>
+                <td>${filtered.make}</td>
+                <td>${filtered.color}</td>`
 
-            
-
-                    let li = document.createElement("tr")
-                    li.innerHTML = `<tr> 
-                    <td>${cars.model}</td>
-                <td>${cars.make}</td>
-                <td>${cars.color}</td>`
-                
                 carsElement.appendChild(li)
             });
         })
