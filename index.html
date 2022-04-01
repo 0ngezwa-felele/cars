@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
     <link rel="stylesheet" href="style2.css">
 
 </head>
+
 <body>
     <div class="container">
         <h1>This is my first API widget</h1>
@@ -23,21 +25,36 @@
     </table>
 
     <h1 class="heading">Select car and color</h1>
-    <select class="cars">
-        <option value="carList" class="car">Cars</option>
-        <option value="carList" class="car">nissan</option>
+    <label for="brands">Choose brand:</label>
+    <select class="brands">
+        <option value="carList">carList</option>
+        <option value="nissan" >nissan</option>
 
     </select>
+    <label for="col">Choose color:</label>
+    <select name='col' class="col">
+        <option value="colors">colors</option>
 
-    <select class="colors">
-        <option value="colors">Colors</option>
-        <option value="colors">Red</option>
+        <option value="red">red</option>
 
     </select>
-    <button class="enter">Display</button>
     <div class="display"></div>
-       
-    
+    <button class="enter">Display</button>
+
+    <h2>Colors</h2>
+    <ul class="colours">
+        <!-- <li></li> -->
+    </ul>
+
+    <h2>Make</h2>
+    <ul class="make">
+        <!-- <li></li> -->
+    </ul>
+
+
+
+
 </body>
 <script src="index.js"></script>
+
 </html>

@@ -1,6 +1,6 @@
 .cars {
     font-family: Arial, Helvetica, sans-serif;
-    /* border-collapse: collapse; */
+    border-collapse: collapse;
     width: 50%;
     align-content: center;
     justify-content: center;
